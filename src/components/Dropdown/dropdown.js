@@ -17,7 +17,7 @@ function Dropdown({ title, description }) {
             <div className='DropContainer' onClick={handleDrop}>
                 <h3>{title}</h3>
                 <span>
-                    <img src={ValueDrop ? FlecheHaut : FlecheBas} alt='fleche de mes couilles' className='DropFleche' />
+                    <img src={ValueDrop ? FlecheHaut : FlecheBas} alt='flechedrop' className='DropFleche' />
                 </span>
             </div>
             {
