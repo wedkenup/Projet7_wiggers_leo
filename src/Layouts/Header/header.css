@@ -1,72 +1,47 @@
-/* CSS du header principal */
-*,
-body {
-    margin: 0;
-    top: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    width: 100%;
-}
-
-@media (max-width: 1440px) {
-
-    /* HEADER */
     header {
-        width: 100%;
-        height: auto;
-    }
-
-    /* NAV */
-    .nav_container {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        padding: 50px 100px;
-        background-color: #FFF;
-    }
-
-    .logo {
-        height: auto;
-        object-fit: cover;
-    }
-
-    /* UL DU HEADER */
-    ul {
-        display: flex;
-        width: 23%;
-        height: 45px;
         justify-content: space-between;
         align-items: center;
+        width: 84%;
+        margin: 20px auto;
     }
 
-    li,
-    a {
-        font-family: Montserrat, Arial;
-        font-weight: 500;
-        font-size: 30px;
-        color: #FF6060;
-        list-style: none;
+
+    header img {
+        height: 95%;
+    }
+
+    nav {
+        justify-content: flex-end;
+        display: flex;
+        width: 100%;
+    }
+
+    .navlink {
+        color: #ff6060;
+        margin-left: 40px;
         text-decoration: none;
+        font-size: 24px;
+        font-weight: 500;
     }
 
-
-
-    /* GESTION SKIN BUTTON */
-    li a:visited {
-
-        color: #FF6060;
+    .navlink:hover {
+        color: #ff6060;
     }
 
-    li a:link {}
+    /* RESPONSIVE */
 
-    a[aria-current="page"] {
-        border-bottom: solid 2px #FF6060;
-        color: black;
+    @media (max-width: 550px) {
+
+        header img {
+            height: 10%;
+            width: 40%;
+        }
+
+        .navlink {
+            text-transform: uppercase;
+            font-size: 0.8em;
+            margin-left: 20px;
+        }
+
     }
-
-
-}

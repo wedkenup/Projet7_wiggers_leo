@@ -1,0 +1,17 @@
+.star {
+    padding-right: 10px;
+    width: 30px;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: right;
+}
+
+@media (max-width: 424px) {
+
+    .star {
+        width: 25px;
+    }
+
+}

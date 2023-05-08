@@ -1,0 +1,68 @@
+/* CSS du grid template 1x4 */
+
+.DropLi {
+    border-radius: 15px;
+    text-align: left;
+    list-style: none;
+    width: 100%;
+}
+
+.DropContainer {
+    background-color: #FF6060;
+    border-radius: 5px;
+    height: 52px;
+    width: 100%;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.DropContainer h3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    color: white;
+    font-weight: 500;
+}
+
+.DropFleche {
+    margin-right: 10px;
+    width: 20px;
+}
+
+.DropDescription {
+    font-size: 16px;
+    padding: 25px 18px 10px 18px;
+    color: #FF6060;
+    background-color: #F7F7F7;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-weight: 400;
+}
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 767px) {
+    .dropdown_container {
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    .DropContainer {
+        height: 40px;
+    }
+
+    .DropDescription {
+        font-size: 15px;
+    }
+
+}

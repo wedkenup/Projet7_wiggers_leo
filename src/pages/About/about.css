@@ -9,57 +9,27 @@ body {
 }
 
 
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) { */
 
-    body {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    /* Section principale */
-    .About {
-        width: 80vw;
-        margin: 2vh 8vw;
-        height: 100%;
-    }
+/* Section principale */
+.About {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-    /* Gestion du banner */
-    .banner {
-        width: 84vw;
-        height: 223px;
-        border-radius: 25px;
-        position: relative;
-        margin-bottom: 45px;
-    }
-
-    .banner::after {
-        content: "";
-        width: 84vw;
-        height: 223px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-radius: 25px;
-        background: #000;
-        opacity: 0.3;
-
-    }
-
-    .banner_image {
-        object-fit: cover;
-        border-radius: 25px;
-        height: 100%;
-        width: 100%;
-    }
-
-    /* Descriptions déroulantes */
-    .about_description {
-        width: 84vw;
-        justify-content: center;
-        padding: 0vw 8vw;
-    }
-
+.dropdown_container {
+    width: 80%;
+    margin: auto;
 }

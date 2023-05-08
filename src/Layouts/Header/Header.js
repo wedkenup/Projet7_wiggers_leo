@@ -7,14 +7,12 @@ import Logo from '@/assets/images/LOGO.svg';
 const Header = () => {
     return (
         <header>
-            <nav className="nav_container">
-                <img src={Logo} className="logo" />
-                <ul>
-                    <li><NavLink to="/home">Accueil</NavLink></li>
-                    <li><NavLink to="/about">A Propos</NavLink></li>
-                </ul>
+            <img src={Logo} alt="Logo" />
+            <nav>
+                <NavLink to="/home" className="navlink" style={({ isActive }) => isActive ? { borderBottom: "1px solid #ff6060" } : { borderBottom: "unset" }}>Accueil</NavLink>
+                <NavLink to="/about" className="navlink" style={({ isActive }) => isActive ? { borderBottom: "1px solid #ff6060" } : { borderBottom: "unset" }}>À propos</NavLink>
             </nav>
-        </header >
+        </header>
     );
 };
 
