@@ -106,14 +106,6 @@
 
 @media (max-width: 767px) {
 
-    .arrowRight {
-        display: none;
-    }
-
-    .arrowLeft {
-        display: none;
-    }
-
     .all_slide_infos {
         margin-top: 5px;
     }
